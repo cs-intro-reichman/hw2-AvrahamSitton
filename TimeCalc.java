@@ -13,6 +13,5 @@ public class TimeCalc {
             minRes = "0" + minRes;
         }
         System.out.println(hourRes + ":" + minRes);
-        System.out.println("you mother fucker no need ro recompile");
     }
 }
