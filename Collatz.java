@@ -25,10 +25,10 @@ public class Collatz {
 				j =0;
 
 			}
-			System.out.println("Every one of the first " + lastToChac + "hailstone sequences reached 1.");
+			System.out.println("Every one of the first " + lastToChac + " hailstone sequences reached 1.");
 
 		} else {
-			System.out.println("Every one of the first " + lastToChac + "hailstone sequences reached 1.");
+			System.out.println("Every one of the first " + lastToChac + " hailstone sequences reached 1.");
 		}
 
 	}
