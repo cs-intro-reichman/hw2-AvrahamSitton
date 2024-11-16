@@ -19,5 +19,6 @@ public class Cheers {
         for (int i = 0; i < repeat; i++) {
             System.out.println(toPrint + "!!!");
         }
+        System.out.println();
     }
 }
