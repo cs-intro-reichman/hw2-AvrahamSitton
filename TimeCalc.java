@@ -1,19 +1,18 @@
 public class TimeCalc {
     public static void main(String[] args) {
-	    int correctH = Integer.parseInt( "" + args[0].charAt(0) + args[0].charAt(1));
-        int correctM = Integer.parseInt( "" + args[0].charAt(3) + args[0].charAt(4));
-        int minToAdd = Integer.parseInt( "" + args[1]);
-        int h = correctH * 60;
-        int m = correctM;
-        int totalMin = (h + m + minToAdd);
-        int mm = (totalMin % 60);
-        int hh = ((totalMin - mm) / 60);
+        int hour = Integer.parseInt("" + args[0].charAt(0) + args[0].charAt(1));
+        int min = Integer.parseInt("" + args[0].charAt(3) + args[0].charAt(4));
+        int minToAdd = Integer.parseInt(args[1]);
 
-        if((hh > 23) && ((hh % 24) < 10)){
-            System.out.println("0" + hh % 24 + ":" + mm);
-        } else System.out.println( hh + ":" + mm);
-        // System.err.println(hh + " " + correctM );
+        String hourRes = "" + (hour + (min + minToAdd) / 60) % 24,
+                minRes = "" + (min + minToAdd) % 60;
+        if (hourRes.length() < 2) {
+            hourRes = "0" + hourRes;
         }
-
+        if (minRes.length() < 2) {
+            minRes = "0" + minRes;
+        }
+        System.out.println(hourRes + ":" + minRes);
+        System.out.println("you mother fucker no need ro recompile");
     }
-
+}
